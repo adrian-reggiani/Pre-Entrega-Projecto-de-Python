@@ -70,28 +70,31 @@ def buscar_Producto():
             f"Precio del producto: $ {producto['precio']}\n"
             )
             return 0
-    print('PRODUCTO NO EXISTE! \n\n')
+    print('\n\nPRODUCTO NO EXISTE! \n\n')
     return 0
 
 def eliminar_Producto():
     # El sistema debe permitir eliminar un producto de la lista, identificándolo por su posición (número) en la lista.-
     
-    idProducto=int(input('Ingrese el numero del registro del producto: '))
+    idProducto=int(input('Ingrese el numero del registro del producto: ')) - 1
     for i, producto in enumerate(productos):
         if i == idProducto:
-            eliminado = productos.pop(i -1) # Esto es por si ingresan el 1 asi se busca el 0
+            eliminado = productos.pop(i) # Esto es por si ingresan el 1 asi se busca el 0
             print(f"Producto eliminado: {eliminado} \n")
             print(f"Productos restante en la lista {productos} \n")
-                  
+            return 0
+    print('\n\nNo se encontro registro del producto\n\n')
     return 0
             
     
 def menu():
+    print ('----------------------------------------------------------------------------------------------')
     print ( '1 - Ingresar Producto' )
     print ( '2 - Mostrar Producto' )
     print ( '3 - Buscar Prducto' )
     print ( '4 - Eliminar Producto' )
-    print ( '5 - Salir\n' )
+    print ( '5 - Salir' )
+    print ('----------------------------------------------------------------------------------------------')
 
 # Programa
 
