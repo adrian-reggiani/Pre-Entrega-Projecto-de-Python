@@ -9,7 +9,7 @@ Estos datos deben almacenarse en una lista, donde cada cliente sea representado/
 
 - Búsqueda de productos: El sistema debe permitir buscar productos por su nombre. Si encuentra coincidencias, debe mostrar la información completa de los productos que coincidan. Si no hay coincidencias, debe informar que no se encontraron resultados.✔
 
-- Eliminación de productos: El sistema debe permitir eliminar un producto de la lista, identificándolo por su posición (número) en la lista.- 
+- Eliminación de productos: El sistema debe permitir eliminar un producto de la lista, identificándolo por su posición (número) en la lista. ✔
 
 - Requisitos
 
