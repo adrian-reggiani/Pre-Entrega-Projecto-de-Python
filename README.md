@@ -21,5 +21,6 @@ Estos datos deben almacenarse en una lista, donde cada cliente sea representado/
 eliminar productos.
 * El programa debe continuar funcionando hasta que se elija una opción para salir.
 
+Menu a Modo de Ejemplo
 
 ![Ejemple de Menu](/img/image.png)

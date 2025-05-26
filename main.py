@@ -1,10 +1,27 @@
+#Variables, listas ...
+
 productos = []
+""" Para probar el mostrar.
+productosB= [
+    {
+        'nombre':  'nombre1',
+        'categoria': 'categoria1',
+        'precio': 'precio1'
+    },
+     {
+        'nombre':  'nombre2',
+        'categoria': 'categoria2',
+        'precio': 'precio2'
+    }
+]"""
 option = 0
+
+#Funciones
 
 def ingresar_Producto():
     nombre = input(' Ingresa nombre del producto: ')
     categoria = input( ' Ingresa la categoria del producto: ')
-    precio = int(input( ' Ingresa el precio del producto: \n'))
+    precio = int(input( ' Ingresa el precio del producto:'))
     
     print( f'Se ha ingresado el siguiente producto:\n - Nombre del Producto: {nombre} \n - Categoria del Producto: {categoria} \n - Precio del Producto: {precio}\n')
     print(' Se regresa al menu anterior \n')
@@ -17,7 +34,17 @@ def ingresar_Producto():
     return  0
 
 def mostrar_producto():
-    print(productos,'\n')
+    
+    for i, producto in enumerate(productos):
+        print('\n'
+            f'Producto numero: {i} '
+            f'\n Nombre del producto: {producto['nombre']}'
+            f'\n Categoria del producto: {producto['categoria']}'
+            f'\n Precio del producto: {producto['precio']}'
+            '\n'
+            )
+    
+    
     return 0
 
 def menu():
@@ -27,11 +54,7 @@ def menu():
     print ( '4 - Eliminar Producto' )
     print ( '5 - Salir\n' )
 
-    
-
-
-
-
+# Programa
 
 while option != 5: 
 
